@@ -24,9 +24,13 @@ Use `$pet-doll-animation` in Codex with your reference photos. The workflow star
 2. 使用 `scripts/run.cjs` 准备请求、分析图集和生成透明帧；使用 `scripts/preview.cjs` 生成本地预览。详见 [工具契约](references/tools.md)。
 3. 需要导入吐梨邦时，按 [产品导入说明](references/product-import.md) 转成目标产品接受的形象包，并在运行中的客户端验收。预览文件本身不是可导入形象包。
 
-**导入位置：**把 `character.json` 和它引用的 PNG 放在同一个本地交付文件夹中（例如 `我的小猫/character.json`、`我的小猫/idle/frame00.png`）。文件夹可放在任意可读取的位置；在产品「更多 → 伙伴外观 → 导入形象」选择 `character.json`，产品会自行复制进「我的形象」。若已有 `.petappearance`，直接选择该文件。目录结构、文件命名和旧 `plugins` 路径的区别见[产品导入说明](references/product-import.md#素材放在哪里产品怎样找到)。
+**导入位置：**把 `character.json` 和它引用的 PNG 放在同一个本地交付文件夹中（例如 `我的小猫/character.json`、`我的小猫/idle/frame00.png`）。文件夹可放在任意可读取的位置；从当前看板快捷栏「外观 → 导入形象」选择 `character.json`，产品会自行复制进「我的形象」。若已有 `.petappearance`，直接选择该文件。目录结构、文件命名和旧 `plugins` 路径的区别见[产品导入说明](references/product-import.md#素材放在哪里产品怎样找到)。
 
-**Import location:** Keep `character.json` and its referenced PNG frames together in any readable local folder, then select `character.json` through **More → Companion Appearance → Import Appearance**. The app copies valid frames into its own library. Alternatively, select an exported `.petappearance` file. See the [directory layout and import steps](references/product-import.md#素材放在哪里产品怎样找到).
+**交给 Agent：**如果你已要求制作并导入，Agent 会从成品目录找到 `character.json` 或 `.petappearance`，通过运行中产品的导入入口提交真实文件，核对「我的形象」中的结果；要求换上时还会应用并检查桌宠播放。你不需要自己在文件选择器里操作。完整步骤见[Agent 自动导入成品目录](references/product-import.md#agent-自动导入成品目录)。
+
+**Import location:** Keep `character.json` and its referenced PNG frames together in any readable local folder, then select `character.json` through the current resident panel's **Appearance → Import Appearance** shortcut. The app copies valid frames into its own library. Alternatively, select an exported `.petappearance` file. See the [directory layout and import steps](references/product-import.md#素材放在哪里产品怎样找到).
+
+**Agent handoff:** If you ask the agent to make and import a character, it selects the completed file from the output folder and imports it through the running app, then checks the library result. If you also ask to use the character, it applies it and checks desktop playback. You do not need to operate the file picker yourself.
 
 确认基础形象和动作质量时，可参考已有公开作品 [刀盾小狗](https://github.com/ShunyuYao/pet-plugin-sword-shield) 的[动作表和预览](https://github.com/ShunyuYao/pet-plugin-sword-shield#11-个动作状态)：它展示了待机、移动、探头、收回和边缘停留等状态的最终效果与接缝。本技能的标准 2D 数据包流程与该作品的插件交付形式不同，需按目标产品实际导入契约转换。该项目的角色图片和音频有[独立来源与权利说明](https://github.com/ShunyuYao/pet-plugin-sword-shield/blob/main/ASSETS.md)；本仓库仅引用公开页面作参考，不复制素材。
 
