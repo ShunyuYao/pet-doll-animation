@@ -1,0 +1,15 @@
+scripts/node_modules/
+node_modules/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.heic
+*.petappearance
+*.zip
+raw/
+result/
+output/
+.env*
+*.log
+.DS_Store

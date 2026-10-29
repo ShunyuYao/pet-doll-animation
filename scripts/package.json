@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "pet-doll-animation-tools",
+  "version": "1.0.0",
+  "dependencies": {
+    "electron": "43.8.4",
+    "@techstark/opencv-js": "4.11.0-release.1"
+  }
+}

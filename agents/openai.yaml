@@ -1,0 +1,4 @@
+interface:
+  display_name: "宠物布娃娃与基础动作"
+  short_description: "从宠物照片制作稳定的二维毛绒形象、五个基础动作和可交互预览"
+  default_prompt: "使用 $pet-doll-animation 根据这些照片制作宠物布娃娃形象和基础动作。"
